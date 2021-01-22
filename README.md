@@ -1,4 +1,4 @@
-# Intro to Flask with Tensorflow Lite
+# Deploy Flask app with Tensorflow Lite in AWS Elastic BeanStalk
 
 - In this assignment, you will use the tflite file you created in the TF Lite assignment and use Flask to build a simple
 app that predicts what the input image is
@@ -14,6 +14,12 @@ app that predicts what the input image is
 - _Make sure you use an image from the test_images folder to test your app_.
 
 ## Deploying the App in AWS BeanStalk
+
+__Pre-Requisite__
+
+- To run elastic beanstalk commands on your CLI, you need to install EB CLI. Please take a look at the following article to install EB CLI:
+
+    [Install the EB CLI](https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/eb-cli3-install-advanced.html)
 
 In this assignment you will modify the Rock Paper Scissor App so that you can deploy it using Aws Elastic Beanstalk (EBS).
 
@@ -75,6 +81,8 @@ available.
 
 - The `region` specifies the region where you want to create the instance and in our case we will use `us-west-2`.
 
+- Note that this command runs in your local environment. You aren't connected to AWS.
+
 __Step 7:__
 
 - Next to create the AWS EBS instance:
@@ -84,6 +92,8 @@ eb create rpsapp --instance_type t2.large
 ```
 
 - Where we can use the `instance_type` flag to specify the instance we want.
+
+- This is the step where you connect to AWS and the app gets created and pushed into an S3 bucket.
 
 __Step 8:__
 
