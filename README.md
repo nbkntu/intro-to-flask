@@ -66,6 +66,7 @@ __Step 6:__
 
 - The `.elasticbeanstalk` folder with config is created when you call:
 ```
+cd rpsapp
 eb init -p python-3.7 rpsapp --region us-west-2
 ```
 
