@@ -10,3 +10,10 @@ app that predicts what the input image is
 ![prediction](static/images/prediction.png)
 
 - _Make sure you use an image from the test_images folder to test your app_.
+
+
+# Build and run docker image
+```
+$ docker build -t rps-app:latest .
+$ docker run -p 5050:5000 rps-app:latest
+```
