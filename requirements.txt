@@ -1,0 +1,8 @@
+Flask==1.1.2
+matplotlib==3.3.4
+numpy==1.19.5
+tensorflow>=2.6.0
+gast>=0.3.3
+h5py>=2.10.0
+numpy>=1.16.0
+tensorflow-estimator>=2.3.0
